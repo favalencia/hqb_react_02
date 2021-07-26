@@ -1,0 +1,10 @@
+{"Datos": [
+    {"ID": "1", "AreaDocumental": "Area1", "TipoDocumento":"TipoDocumento 1-1"},
+    {"ID": "2", "AreaDocumental": "Area1", "TipoDocumento":"TipoDocumento 1-2"},
+    {"ID": "3", "AreaDocumental": "Area2", "TipoDocumento":"TipoDocumento 2-1"},
+    {"ID": "4", "AreaDocumental": "Area2", "TipoDocumento":"TipoDocumento 2-2"},
+    {"ID": "5", "AreaDocumental": "Area2", "TipoDocumento":"TipoDocumento 2-3"},
+    {"ID": "6", "AreaDocumental": "Area2", "TipoDocumento":"TipoDocumento 2-4"},
+    {"ID": "7", "AreaDocumental": "Area2", "TipoDocumento":"TipoDocumento 2-5"}
+  ]
+}
