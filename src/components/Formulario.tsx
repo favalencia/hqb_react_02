@@ -3,29 +3,24 @@ import datos from '../data/datos.json';
 
 
 const Formulario = () => {
-    const detalleGrilla = datos.Datos.map((item) =>
-            <tr key= {item.ID}>
-                <td>{item.ID}</td>
-                <td>{item.AreaDocumental}</td>
-                <td>{item.TipoDocumento}</td>
-            </tr>
-    );
+  
+    const [mensaje, setMensaje] = React.useState<string>("Bienvenid@");
+    const [boton, setBoton] = React.useState<string>("Salir");
     
+
+    const handleCambiarMensaje = (e:any) => {       
+        e.preventDefault();
+        setMensaje(boton=="Salir"? "Chaito": "Bienvenido")
+        setBoton(boton=="Salir"? "Entrar":"Salir")
+    };
+
     return (
-        <>
-        <table className="table table-dark table-striped">
-            <thead>
-                <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Área Documental</th>
-                <th scope="col">Nombre Tipo Documento</th>
-                </tr>
-            </thead>
-            <tbody>
-               {detalleGrilla}                            
-            </tbody>
-        </table>
-        </>
+        <header>      
+        <div className="p-5 text-center bg-light">
+          <h1 className="mb-3">{mensaje}</h1>
+          <a className="btn btn-primary" href="" role="button" onClick={handleCambiarMensaje}>{boton}</a>
+        </div>
+      </header>
     )
 }
 
