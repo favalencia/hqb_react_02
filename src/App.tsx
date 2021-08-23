@@ -1,9 +1,9 @@
-import Formulario from './components/Formulario';
+import Menu from './components/Menu';
 
 function App() {
   return (
     <div >
-    <Formulario  />
+    <Menu  />
     </div>
   );
 }
