@@ -1,9 +1,9 @@
-import Menu from './components/Menu';
+import Promesa from './components/Promesa';
 
 function App() {
   return (
     <div >
-    <Menu  />
+    <Promesa  />
     </div>
   );
 }
